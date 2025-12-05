@@ -1,5 +1,7 @@
 # BIN Viewer
 
+中文 | [English](README_EN.md)
+
 一个用于可视化二进制文件的工具，主要用于算子开发和模型调试时对比 bin 文件的相似度。
 
 ![主界面](assets/images/main.png)
