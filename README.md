@@ -49,7 +49,9 @@ pyinstaller main.spec
 
 ### 演示
 
-![使用演示](assets/demo.gif)
+![使用演示](https://raw.githubusercontent.com/WWandP/Bin-Viewer/main/assets/demo.gif)
+
+> 如果 GIF 未显示，请查看 [assets/demo.gif](assets/demo.gif)
 
 ## 项目结构
 
