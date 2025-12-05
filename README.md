@@ -2,6 +2,8 @@
 
 一个用于可视化二进制文件的工具，主要用于算子开发和模型调试时对比 bin 文件的相似度。
 
+![主界面](assets/images/main.png)
+
 ## 项目背景
 
 在开发深度学习算子时，经常需要对比模型输出的 bin 文件相似度、可视化中间层张量数据、拼接处理多个张量文件。为了提高调试效率，开发了这个小工具。
@@ -45,20 +47,24 @@ pyinstaller main.spec
 - `ESC` - 关闭窗口
 - `↑/↓` - 切换数据类型
 
-### 演示视频
-查看 `demo.mp4` 了解详细使用方法。
+### 演示
+
+![使用演示](assets/demo.gif)
 
 ## 项目结构
 
 ```
 binviewer/
 ├── main.py              # 程序入口
-├── src/                 # 源代码
-│   ├── bin_viewer.py           # 主窗口
-│   ├── plot_window.py          # 波形窗口
-│   ├── comparison_window.py    # 对比窗口
-│   └── tensor_concat_window.py # 拼接工具
-└── ...
+├── assets/              # 资源文件
+│   ├── icons/          # 图标
+│   ├── images/         # 图片
+│   └── demo.mp4        # 演示视频
+└── src/                 # 源代码
+    ├── bin_viewer.py           # 主窗口
+    ├── plot_window.py          # 波形窗口
+    ├── comparison_window.py    # 对比窗口
+    └── tensor_concat_window.py # 拼接工具
 ```
 
 ## 技术栈

@@ -36,3 +36,7 @@ config.json
 *.exe
 *.zip
 _internal/
+
+# Keep assets but ignore large files
+assets/demo.mp4
+assets/*.gif

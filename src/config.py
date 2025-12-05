@@ -49,11 +49,11 @@ class Config:
             if hasattr(sys, '_MEIPASS'):
                 icon_path = os.path.join(sys._MEIPASS, "bin.ico")
             else:
-                icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bin.ico")
+                base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+                icon_path = os.path.join(base_dir, "assets", "icons", "bin.ico")
             
             if os.path.exists(icon_path):
                 return QIcon(icon_path)
             return QIcon.fromTheme("application-x-executable")
-        except Exception as e:
-            pass
+        except Exception:
             return None
